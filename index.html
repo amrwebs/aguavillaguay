@@ -4,8 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Agua de Mesa Villaguay</title>
-  <meta name="description" content="Agua de Mesa Villaguay – Bidones 20L y 12L. Pedidos por WhatsApp. Entregas en la ciudad.">
+  <meta name="description" content="Agua de Mesa Villaguay – Bidones 20L y 12L. Soda 1,125L. Hielo 2kg y 10kg. Pedidos por WhatsApp. Entregas en la ciudad.">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Opcional: por si querés un toque de estilo mínimo sin tocar tu CSS */
+    .product-art svg { width: 100%; height: auto; display:block; }
+    .small { font-size: .9rem; }
+  </style>
 </head>
 <body>
 
@@ -29,9 +34,9 @@
   <section class="hero" id="inicio">
     <div class="wrap hero-inner">
       <h1>Agua segura, fresca y lista para vos 💧</h1>
-      <p>Bidones sellados de <strong>20L</strong> y <strong>12L</strong>. Pedidos rápidos por WhatsApp y entregas en horario extendido.</p>
+      <p>Bidones sellados de <strong>20L</strong> y <strong>12L</strong>, <strong>Soda 1,125L</strong> y <strong>Hielo en bolsa (2kg y 10kg)</strong>. Pedidos rápidos por WhatsApp y entregas en horario extendido.</p>
       <div class="hero-cta">
-        <a href="#productos" class="btn">Ver medidas</a>
+        <a href="#productos" class="btn">Ver productos</a>
         <a href="#pedir" class="btn ghost">Hacer pedido</a>
       </div>
     </div>
@@ -43,8 +48,8 @@
       <h2>Pedí ahora</h2>
       <div class="card cta-card" style="text-align:center">
         <p class="lead">Contactanos por WhatsApp para tu pedido al instante.</p>
-        <p><a id="cta-wa" class="btn" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a></p>
-        <p class="muted small">o llamanos al <a id="cta-tel" href="#">+54 3446 000000</a></p>
+        <p><a id="cta-wa" class="btn" href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" target="_blank" rel="noopener">Abrir WhatsApp</a></p>
+        <p class="muted small">o llamanos al <a id="cta-tel" href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0">+54 9 3455 40-4568</a></p>
       </div>
     </div>
   </section>
@@ -83,7 +88,7 @@
               <li>Recomendado con dispenser</li>
             </ul>
             <div class="actions">
-              <a href="#pedir" class="btn">Pedir por WhatsApp</a>
+              <a href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" class="btn wa-btn">Pedir por WhatsApp</a>
             </div>
           </div>
         </article>
@@ -114,23 +119,53 @@
               <li>Con sello de seguridad</li>
             </ul>
             <div class="actions">
-              <a href="#pedir" class="btn">Pedir por WhatsApp</a>
+              <a href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" class="btn wa-btn">Pedir por WhatsApp</a>
             </div>
           </div>
         </article>
 
-        <!-- Hielo en bolsa -->
+        <!-- Soda 1,125L -->
         <article class="card product">
           <div class="product-art">
-            <svg viewBox="0 0 200 240" role="img" aria-label="Hielo en bolsa">
+            <svg viewBox="0 0 200 240" role="img" aria-label="Soda 1,125L">
               <defs>
-                <linearGradient id="gHielo" x1="0" y1="0" x2="0" y2="1">
+                <linearGradient id="gSoda" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#f8fdff"/>
+                  <stop offset="100%" stop-color="#c9ecff"/>
+                </linearGradient>
+              </defs>
+              <!-- Botella estilizada -->
+              <rect x="70" y="45" width="60" height="145" rx="22" fill="url(#gSoda)" stroke="#6bb6ff" stroke-width="2"/>
+              <rect x="85" y="25" width="30" height="25" rx="6" fill="#9cd7ff" stroke="#6bb6ff" stroke-width="2"/>
+              <rect x="88" y="18" width="24" height="8" rx="4" fill="#6bb6ff"/>
+              <text x="100" y="220" text-anchor="middle" fill="#2a6fa5" font-size="18" font-weight="700">Soda 1,125L</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <h3>Soda 1,125L</h3>
+            <ul class="specs">
+              <li>Botella retornable</li>
+              <li>Agua gasificada y fresca</li>
+              <li>Ideal para la mesa familiar</li>
+            </ul>
+            <div class="actions">
+              <a href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" class="btn wa-btn">Pedir por WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hielo en bolsa 2kg -->
+        <article class="card product">
+          <div class="product-art">
+            <svg viewBox="0 0 200 240" role="img" aria-label="Hielo en bolsa 2kg">
+              <defs>
+                <linearGradient id="gHielo2" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stop-color="#f0faff"/>
                   <stop offset="100%" stop-color="#cfeeff"/>
                 </linearGradient>
               </defs>
               <!-- Bolsa -->
-              <rect x="40" y="50" width="120" height="150" rx="12" fill="url(#gHielo)" stroke="#8fd4ff" stroke-width="2"/>
+              <rect x="40" y="50" width="120" height="150" rx="12" fill="url(#gHielo2)" stroke="#8fd4ff" stroke-width="2"/>
               <polygon points="40,50 160,50 150,30 50,30" fill="#d8f4ff" stroke="#8fd4ff" stroke-width="2"/>
               <!-- Atadura -->
               <path d="M50 30 Q100 20 150 30" fill="none" stroke="#8fd4ff" stroke-width="2"/>
@@ -139,21 +174,54 @@
               <rect x="101" y="105" width="25" height="25" rx="4" fill="#bce6ff" stroke="#89cfff" stroke-width="1.5"/>
               <rect x="85" y="137" width="25" height="25" rx="4" fill="#bce6ff" stroke="#89cfff" stroke-width="1.5"/>
               <rect x="116" y="140" width="22" height="22" rx="4" fill="#c7ecff" stroke="#89cfff" stroke-width="1.2"/>
-              <text x="100" y="220" text-anchor="middle" fill="#3a6e9f" font-size="18" font-weight="700">Hielo</text>
+              <text x="100" y="220" text-anchor="middle" fill="#3a6e9f" font-size="18" font-weight="700">Hielo 2kg</text>
             </svg>
           </div>
           <div class="product-body">
-            <h3>Hielo en bolsa</h3>
+            <h3>Hielo en bolsa 2kg</h3>
             <ul class="specs">
-              <li>Bolsa de 2 kg</li>
               <li>Hielo cristalino y duradero</li>
-              <li>Ideal para bebidas y conservadoras</li>
+              <li>Ideal para bebidas</li>
+              <li>Rápido enfriado</li>
             </ul>
             <div class="actions">
-              <a href="#pedir" class="btn">Pedir por WhatsApp</a>
+              <a href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" class="btn wa-btn">Pedir por WhatsApp</a>
             </div>
           </div>
         </article>
+
+        <!-- Hielo en bolsa 10kg -->
+        <article class="card product">
+          <div class="product-art">
+            <svg viewBox="0 0 200 240" role="img" aria-label="Hielo en bolsa 10kg">
+              <defs>
+                <linearGradient id="gHielo10" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#f4fbff"/>
+                  <stop offset="100%" stop-color="#d0f0ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="35" y="40" width="130" height="165" rx="14" fill="url(#gHielo10)" stroke="#6ecfff" stroke-width="2"/>
+              <polygon points="35,40 165,40 152,18 48,18" fill="#c8f0ff" stroke="#6ecfff" stroke-width="2"/>
+              <path d="M48 18 Q100 8 152 18" fill="none" stroke="#6ecfff" stroke-width="2"/>
+              <rect x="64" y="95" width="30" height="30" rx="5" fill="#bce6ff" stroke="#6ecfff" stroke-width="1.5"/>
+              <rect x="106" y="120" width="30" height="30" rx="5" fill="#c2edff" stroke="#6ecfff" stroke-width="1.5"/>
+              <rect x="86" y="145" width="30" height="30" rx="5" fill="#bdebff" stroke="#6ecfff" stroke-width="1.5"/>
+              <text x="100" y="220" text-anchor="middle" fill="#23669c" font-size="18" font-weight="700">Hielo 10kg</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <h3>Hielo en bolsa 10kg</h3>
+            <ul class="specs">
+              <li>Ideal para eventos y conservadoras</li>
+              <li>Hielo resistente y parejo</li>
+              <li>Excelente rendimiento</li>
+            </ul>
+            <div class="actions">
+              <a href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" class="btn wa-btn">Pedir por WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -174,7 +242,7 @@
         <div class="card">
           <h4>Entregas</h4>
           <p>Coordinamos entregas en Villaguay. Pedidos con anticipación por WhatsApp.</p>
-          <a href="#pedir" class="btn ghost">Coordinar ahora</a>
+          <a href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" class="btn ghost">Coordinar ahora</a>
         </div>
       </div>
     </div>
@@ -189,8 +257,8 @@
           <h4>Datos</h4>
           <ul class="contact-list">
             <li>📍 <b>Dirección:</b> Villaguay, Entre Ríos</li>
-            <li>📞 <b>Tel/WhatsApp:</b> <a id="tel-link" href="#">+54 3446 000000</a></li>
-            <li>✉️ <b>Email:</b> <a href="mailto:contacto@aguavillaguay.com">contacto@aguavillaguay.com</a></li>
+            <li>📞 <b>Tel/WhatsApp:</b> <a id="" href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0">+54 9 3455 40-4568</a></li>
+            
           </ul>
           <p class="muted">Hacemos recargas y reposición de bidones. Consultá stock y reparto.</p>
         </div>
@@ -199,8 +267,8 @@
         <div class="card" style="text-align:center">
           <h4>Pedidos rápidos</h4>
           <p class="lead">Escribinos por WhatsApp o llamanos.</p>
-          <p><a id="contact-wa" class="btn" href="#" target="_blank" rel="noopener">WhatsApp</a></p>
-          <p class="muted small">Teléfono: <a id="contact-tel" href="#">+54 3446 000000</a></p>
+          <p><a id="contact-wa" class="btn" href="https://api.whatsapp.com/qr/GHFQUD2MAQQZI1?autoload=1&app_absent=0" target="_blank" rel="noopener">WhatsApp</a></p>
+          <p class="muted small">Teléfono: <a id="contact-tel" href="#">+54 9 3455 40-4568</a></p>
         </div>
       </div>
     </div>
@@ -215,6 +283,42 @@
     </div>
   </footer>
 
+  <!-- Tu JS externo (si lo usás) -->
   <script src="script.js"></script>
+
+  <!-- JS mínimo para setear los links de WhatsApp y Tel automáticamente -->
+  <script>
+    // Cambiá SOLO esta constante si querés usar otro número (E.164 sin signos): 54 (país) + 9 (cel) + área + línea
+    const PHONE_E164 = "5493455497336"; // +54 9 3455 497336
+    const WA_LINK = `https://wa.me/${PHONE_E164}`;
+    const TEL_LINK = `tel:+${PHONE_E164}`;
+
+    // Botones principales
+    const ctaWa = document.getElementById('cta-wa');
+    const ctaTel = document.getElementById('cta-tel');
+    if (ctaWa) ctaWa.href = WA_LINK;
+    if (ctaTel) { ctaTel.href = TEL_LINK; ctaTel.textContent = '+54 9 3455 497336'; }
+
+    // Botones de contacto
+    const contactWa = document.getElementById('contact-wa');
+    const contactTel = document.getElementById('contact-tel');
+    const telLink = document.getElementById('tel-link');
+    if (contactWa) contactWa.href = WA_LINK;
+    if (contactTel) { contactTel.href = TEL_LINK; contactTel.textContent = '+54 9 3455 497336'; }
+    if (telLink)   { telLink.href   = TEL_LINK;   telLink.textContent   = '+54 9 3455 497336'; }
+
+    // Botones de cada producto
+    document.querySelectorAll('.wa-btn').forEach(a => a.setAttribute('href', WA_LINK));
+
+    // Toggle menú móvil simple (si tu CSS lo soporta)
+    const menuBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('header .nav nav');
+    if (menuBtn && nav) {
+      menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        menuBtn.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>
